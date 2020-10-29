@@ -13,7 +13,6 @@ const mins = timer.querySelector('[data-value="mins"]');
 const secs = timer.querySelector('[data-value="secs"]');
 return {day,hours,mins,secs}
   }
-  
   setInt = setInterval(() => {
     const time = this.targetDate - Date.now(); 
     time < 0?clearInterval(this.setInt):this.updateHours(time);
